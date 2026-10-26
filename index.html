@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">   
+  <form>  
+
+    <h1>Employee Management System</h1>
+
+    <input type="search" id="search" placeholder="Search the employee">
+    
+    <select id="departmentFilter">
+    <option value="">All Departments</option>
+    <option value="IT">IT</option>
+    <option value="HR">HR</option>
+    <option value="Sales">Sales</option>
+    <option value="Finance">Finance</option>
+    </select>
+    <br><br>
+
+    <label for="Employee">Employee Name:</label><input type="text" id="empname" required>
+
+    <label for="Email">Email:</label><input type="email" id="email" required>
+
+    <label for="dept">Department:</label>
+    <select id="dept" required>
+    <option value="">Select Department</option>
+    <option value="IT">IT</option>
+    <option value="HR">HR</option>
+    <option value="Sales">Sales</option>
+    <option value="Finance">Finance</option>
+    </select>
+
+    <label for="Salary">Salary:</label><input type="number" id="Salary">
+
+    <label for="Phone:">Phone no.:</label><input type="number" id="phone" required>
+
+    <button type="submit" id="btn">Submit</button>
+    
+  </form><br><br><br>  
+</div>
+        <div class="table-container">
+            <table>
+            <thead>
+                <tr>
+                    <th>Employee Name:</th>
+                    <th>Employee Email:</th>
+                    <th>Department:</th>
+                    <th>Employee Salary:</th>
+                    <th>Phone No:</th>
+                    <th>Action:</th>
+                </tr>
+            </thead>
+            <tbody id="body">
+
+            </tbody>
+            </table>
+        </div>
+</body>
+<script src="script.js"></script>
+</html>
